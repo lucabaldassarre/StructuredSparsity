@@ -29,6 +29,10 @@ tv_decomp = 0;
 
 display_results = 1;
 
+if ~exist('Results', 'dir')
+    mkdir('Results');
+end
+
 
 %%
 addpath(genpath('Toolboxes')) % Add all toolboxes: RWT, FFST, Fast Hadamard transform, Spams
